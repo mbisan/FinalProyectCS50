@@ -40,7 +40,7 @@ class MainWindow: # class to handle input-output through window
         self.fileMenu.add_command(label = "Exit", command = self.onExit)
         self.menubar.add_cascade(label = "File", menu = self.fileMenu)
 
-        self.aboutMenu.add_command(label = "See on GitHub", command = lambda : pyperclip.copy('google.com'))
+        self.aboutMenu.add_command(label = "See on GitHub", command = lambda : pyperclip.copy('https://github.com/mbs26/FinalProyectCS50'))
         self.menubar.add_cascade(label = "About", menu = self.aboutMenu)
 
         self.opendatabase = Button(window, text = "Open Database", command = self.search_database)
